@@ -1,0 +1,7 @@
+2024-04-13 10:33:30,575 INFO :: Basic information
+2024-04-13 10:33:30,575 WARNING :: Something you need to pay attention to
+2024-04-13 10:33:30,575 ERROR :: Message that helps debug an error in program
+2024-04-13 10:35:25,689 INFO :: Basic information
+2024-04-13 10:35:25,689 WARNING :: Something you need to pay attention to
+2024-04-13 10:35:25,689 ERROR :: Message that helps debug an error in program
+2024-04-13 10:35:25,689 INFO :: Binance Connector Connected
