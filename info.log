@@ -5,3 +5,12 @@
 2024-04-13 10:35:25,689 WARNING :: Something you need to pay attention to
 2024-04-13 10:35:25,689 ERROR :: Message that helps debug an error in program
 2024-04-13 10:35:25,689 INFO :: Binance Connector Connected
+2024-04-14 18:55:45,492 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:56:11,193 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:56:11,851 ERROR :: Error while making GET request to /fapi/v1/exchangeInfo: {'code': -5000, 'msg': 'Path /fapi/v1/exchangeInfo/fapi/v1/exchangeInfo, Method GET is invalid'} (HTTP status code 404)
+2024-04-14 18:58:14,026 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:58:58,353 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:59:03,198 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:59:26,400 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:59:44,785 INFO :: Binance Futures Client Successfully Initialized
+2024-04-14 18:59:57,703 INFO :: Binance Futures Client Successfully Initialized

@@ -1,40 +1,36 @@
 ## Imports
-## UI import
-import tkinter as tk 
-import tkmacosx as tkm
-from tkinter import Label
-# from tkmacosx import Label
+import tkinter as tk  # Module for GUI
+import logging  # Module for logging
+from connectors.binance_futures import BinanceFutureClient  # Importing Binance Futures client
 
-## logger import
-import logging
-from bitmex import get_contracts
+# Setting up logging configurations
+logger = logging.getLogger()  # Initialize logger
+logger.setLevel(logging.INFO)  # Set log level to INFO
 
-logger = logging.getLogger()
+# Setting up logging handlers
+stream_handler = logging.StreamHandler()  # Stream handler for console output
+formatter = logging.Formatter('%(asctime)s %(levelname)s :: %(message)s')  # Log format
+stream_handler.setFormatter(formatter)  # Set formatter for stream handler
+stream_handler.setLevel(logging.INFO)  # Set log level for stream handler to INFO
 
-logger.setLevel(logging.INFO)
-stream_handler = logging.StreamHandler()
-formatter = logging.Formatter('%(asctime)s %(levelname)s :: %(message)s')
-stream_handler.setFormatter(formatter)
-stream_handler.setLevel(logging.INFO)
+file_handler = logging.FileHandler('info.log')  # File handler for log file
+file_handler.setFormatter(formatter)  # Set formatter for file handler
+file_handler.setLevel(logging.DEBUG)  # Set log level for file handler to DEBUG
 
-file_handler = logging.FileHandler('info.log')
-file_handler.setFormatter(formatter)
-file_handler.setLevel(logging.DEBUG)
-
-logger.addHandler(stream_handler)
-logger.addHandler(file_handler)
+# Add handlers to logger
+logger.addHandler(stream_handler)  # Add stream handler to logger
+logger.addHandler(file_handler)  # Add file handler to logger
 
 ## Following only works if main.py is executed.
 if __name__ == '__main__':
-    bitmex_contracts = get_contracts()
+    # Initialize Binance Futures client for testnet
+    binance = BinanceFutureClient(True)
+    # Print historical candles for BTCUSDT pair with 1-hour interval
+    print(binance.get_historical_candles("BTCUSDT", "1h"))
 
     ## Main window of application.
-    root = tk.Tk()
-
-    for contract in bitmex_contracts:
-        label_widget = Label(root, text="hello")
-        label_widget.pack(side = tk.TOP)
+    root = tk.Tk()  # Create main application window
 
     ## Function that keeps the window open indefinitely 
     # until any user input is given.
-    root.mainloop()
+    root.mainloop()  # Start main event loop for GUI application
