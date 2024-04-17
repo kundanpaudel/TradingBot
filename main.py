@@ -24,7 +24,7 @@ logger.addHandler(file_handler)  # Add file handler to logger
 ## Following only works if main.py is executed.
 if __name__ == '__main__':
     # Initialize Binance Futures client for testnet
-    binance = BinanceFutureClient(True)
+    binance = BinanceFutureClient("4bad66b617dd085319d941104cb4f3f0c03a1ab966a364a2e1845ae14cb54669", "e74f9f00255b56601171f4265ef8df3f8ca6a4f145e6f112058c55cfdecab12b",True)
     # Print historical candles for BTCUSDT pair with 1-hour interval
     print(binance.get_historical_candles("BTCUSDT", "1h"))
 

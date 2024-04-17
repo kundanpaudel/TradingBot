@@ -1,22 +1,47 @@
 import logging
 import requests
+import time
+import hmac
+import hashlib
+from urllib.parse import urlencode
 
 # Initialize logger for logging events
 logger = logging.getLogger()
 
 class BinanceFutureClient:
-    def __init__(self, testnet):
+    def __init__(self, public_key, secret_key, testnet):
         # Set base URL based on testnet flag
         if testnet:
             self.base_url = "https://testnet.binancefuture.com"  # Testnet API endpoint
         else:
             self.base_url = "https://fapi.binance.com"  # Production API endpoint
-        
+
+        self.public_key = public_key
+        self.secret_key = secret_key
+
+        self.headers = {'X-MBX-APIKEY': self.public_key}
+
         # Dictionary to store latest bid-ask prices for symbols
         self.prices = dict()
         
         # Log initialization of Binance Futures client
         logger.info("Binance Futures Client Successfully Initialized")
+
+
+    """
+    The method below takes the request data as input and generates a cryptographic
+    signature using HMAC (Hash-based Message Authentication Code) algorithm
+    with SHA-256 hash function. The signature is computed by encoding the
+    request data using URL encoding, then hashing it with the secret key
+    provided. The resulting signature is returned as a hexadecimal string.
+
+    Args:
+        data (dict): A dictionary containing the request parameters to be signed.
+
+    Returns:
+        str: A hexadecimal string representing the HMAC signature.
+    """
+    return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()
     
     def make_request(self, method, endpoint, data):
         # Make HTTP request to Binance Futures API
@@ -80,3 +105,31 @@ class BinanceFutureClient:
                 self.prices[symbol]['ask'] = float(ob_data['askPrice'])
 
         return self.prices[symbol]
+
+
+    # Get current balances from account.
+    def get_balance(self):
+        data = dict()
+        data['timestamp'] = int(time.time() * 1000)
+        data["signature"] = self.generate_signature(data)
+
+        balances = dict()
+
+        account_data = self.make_request("GET", "fapi/v1/account", data)
+
+        if account_data is not None:
+            for assets in account_data["assets"]:
+                balances[assets['asset']] = assets
+        return balances
+
+    # Placing order
+    def place_order(self):
+        pass
+
+    # Cancelling order
+    def cancel_order(self):
+        pass
+
+    # Get order status
+    def get_order_status(self, symbol, order_id):
+        pass
