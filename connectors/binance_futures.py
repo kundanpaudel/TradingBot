@@ -41,12 +41,17 @@ class BinanceFutureClient:
     Returns:
         str: A hexadecimal string representing the HMAC signature.
     """
-    return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()
+    def generate_signature(self, data):
+        return hmac.new(self.secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()
     
     def make_request(self, method, endpoint, data):
         # Make HTTP request to Binance Futures API
         if method == "GET":
-            response = requests.get(self.base_url + endpoint, params=data)
+            response = requests.get(self.base_url + endpoint, params=data, headers=self.headers)
+        elif method == "POST":
+            response = requests.post(self.base_url + endpoint, params=data, headers=self.headers)
+        elif method == "DELETE":
+            response = requests.delete(self.base_url + endpoint, params=data, headers=self.headers)
         else:
             raise ValueError("Unsupported HTTP method")
         
@@ -115,21 +120,49 @@ class BinanceFutureClient:
 
         balances = dict()
 
-        account_data = self.make_request("GET", "fapi/v1/account", data)
+        account_data = self.make_request("GET", "/fapi/v2/account", data)
 
         if account_data is not None:
-            for assets in account_data["assets"]:
-                balances[assets['asset']] = assets
+            for a in account_data["assets"]:
+                balances[a['asset']] = a
         return balances
 
     # Placing order
-    def place_order(self):
-        pass
+    def place_order(self, symbol, side, quantity, order_type, price=None, timeinforce=None):
+        data = dict()
+        data['symbol'] = symbol
+        data['side'] = side
+        data['quantity'] = quantity
+        data['type'] = order_type
+        if price is not None:
+            data['price'] = price
+        if timeinforce is not None:
+            data['timeinforce'] = timeinforce
+        data['timestamp'] = int(time.time() * 1000)
+        data['signature'] = self.generate_signature(data)
+
+        order_status = self.make_request("POST", "/fapi/v1/order", data)
+        return order_status
+
 
     # Cancelling order
-    def cancel_order(self):
-        pass
+    def cancel_order(self, symbol, order_id):
+        data = dict()
+        data['orderId'] = order_id
+        data['symbol'] = symbol
+
+        data['timestamp'] = int(time.time() * 1000)
+        data['signature'] = self.generate_signature(data)
+
+        order_status = self.make_request("DELETE", "/fapi/v1/order", data)
+        return order_status
 
     # Get order status
     def get_order_status(self, symbol, order_id):
-        pass
+        data = dict()
+        data['timestamp'] = int(time.time() * 1000)
+        data['symbol'] = symbol
+        data['orderID'] = order_id
+        data['signature'] = self.generate_signature(data)
+        order_status = self.make_request("GET", "/fapi/v1/order", data)
+        return order_status

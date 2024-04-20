@@ -14,3 +14,49 @@
 2024-04-14 18:59:26,400 INFO :: Binance Futures Client Successfully Initialized
 2024-04-14 18:59:44,785 INFO :: Binance Futures Client Successfully Initialized
 2024-04-14 18:59:57,703 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:20:22,905 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:20:32,137 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:21:08,260 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:21:31,904 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:21:32,566 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (HTTP status code 401)
+2024-04-17 13:26:08,941 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:26:09,763 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (HTTP status code 401)
+2024-04-17 13:28:03,513 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:28:04,240 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (HTTP status code 401)
+2024-04-17 13:30:31,344 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:30:31,961 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (HTTP status code 401)
+2024-04-17 13:31:25,261 INFO :: Binance Futures Client Successfully Initialized
+2024-04-17 13:31:25,862 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (HTTP status code 401)
+2024-04-20 14:12:47,578 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:12:48,384 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (HTTP status code 401)
+2024-04-20 14:15:56,674 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:15:57,367 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -5000, 'msg': 'GET /fapi/v1/account is retired, please use GET /fapi/v2/account'} (HTTP status code 400)
+2024-04-20 14:16:30,628 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:23:16,059 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:32:50,594 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:32:52,162 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -1121, 'msg': 'Invalid symbol.'} (HTTP status code 400)
+2024-04-20 14:33:38,244 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:33:39,574 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -1121, 'msg': 'Invalid symbol.'} (HTTP status code 400)
+2024-04-20 14:34:24,844 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:34:26,166 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -1121, 'msg': 'Invalid symbol.'} (HTTP status code 400)
+2024-04-20 14:35:04,037 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:35:05,385 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -1102, 'msg': "Mandatory parameter 'timeinforce' was not sent, was empty/null, or malformed."} (HTTP status code 400)
+2024-04-20 14:36:21,714 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:36:23,209 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -1102, 'msg': "Mandatory parameter 'timeinforce' was not sent, was empty/null, or malformed."} (HTTP status code 400)
+2024-04-20 14:37:32,210 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:38:28,258 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:38:49,857 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:40:13,996 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:40:14,631 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -1102, 'msg': "Param 'orderid' or 'origclientorderid' must be sent, but both were empty/null!"} (HTTP status code 400)
+2024-04-20 14:40:54,190 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:40:54,878 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -2011, 'msg': 'Unknown order sent.'} (HTTP status code 400)
+2024-04-20 14:41:11,806 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:41:12,706 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -2011, 'msg': 'Unknown order sent.'} (HTTP status code 400)
+2024-04-20 14:42:34,221 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:42:35,106 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -1102, 'msg': "Param 'orderid' or 'origclientorderid' must be sent, but both were empty/null!"} (HTTP status code 400)
+2024-04-20 14:43:01,869 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:43:03,051 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -2011, 'msg': 'Unknown order sent.'} (HTTP status code 400)
+2024-04-20 14:46:01,652 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:46:03,043 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -2011, 'msg': 'Unknown order sent.'} (HTTP status code 400)
+2024-04-20 14:47:53,146 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 14:48:14,525 INFO :: Binance Futures Client Successfully Initialized

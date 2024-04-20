@@ -26,7 +26,10 @@ if __name__ == '__main__':
     # Initialize Binance Futures client for testnet
     binance = BinanceFutureClient("4bad66b617dd085319d941104cb4f3f0c03a1ab966a364a2e1845ae14cb54669", "e74f9f00255b56601171f4265ef8df3f8ca6a4f145e6f112058c55cfdecab12b",True)
     # Print historical candles for BTCUSDT pair with 1-hour interval
-    print(binance.get_historical_candles("BTCUSDT", "1h"))
+    print(binance.get_balance())
+    # print(binance.place_order("BTCUSDT", "BUY", 0.01, "LIMIT", 20000, "GTC"))
+    # print(binance.get_order_status("BTCUSDT", 4016906846))
+    # print(binance.cancel_order("BTCUSDT", 4016906846))
 
     ## Main window of application.
     root = tk.Tk()  # Create main application window
