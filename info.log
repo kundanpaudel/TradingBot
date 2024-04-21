@@ -60,3 +60,93 @@
 2024-04-20 14:46:03,043 ERROR :: Error while making DELETE request to /fapi/v1/order: {'code': -2011, 'msg': 'Unknown order sent.'} (HTTP status code 400)
 2024-04-20 14:47:53,146 INFO :: Binance Futures Client Successfully Initialized
 2024-04-20 14:48:14,525 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 15:07:36,182 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 15:07:49,346 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 15:09:00,097 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 15:10:32,414 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 16:23:58,576 INFO :: Binance Futures Client Successfully Initialized
+2024-04-20 16:24:44,016 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:03:07,445 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:04:24,214 ERROR :: error from callback <bound method BinanceFutureClient.on_open of <connectors.binance_futures.BinanceFutureClient object at 0x1030f1c90>>: BinanceFutureClient.on_open() takes 1 positional argument but 2 were given
+2024-04-21 16:04:40,375 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x1030f1c90>>: BinanceFutureClient.on_error() takes 2 positional arguments but 3 were given
+2024-04-21 16:04:40,554 ERROR :: error from callback <bound method BinanceFutureClient.on_close of <connectors.binance_futures.BinanceFutureClient object at 0x1030f1c90>>: BinanceFutureClient.on_close() takes 1 positional argument but 2 were given
+2024-04-21 16:04:40,557 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:04:49,204 ERROR :: error from callback <bound method BinanceFutureClient.on_open of <connectors.binance_futures.BinanceFutureClient object at 0x11006aad0>>: BinanceFutureClient.on_open() takes 1 positional argument but 2 were given
+2024-04-21 16:05:26,526 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x11006aad0>>: BinanceFutureClient.on_error() takes 2 positional arguments but 3 were given
+2024-04-21 16:05:26,727 ERROR :: error from callback <bound method BinanceFutureClient.on_close of <connectors.binance_futures.BinanceFutureClient object at 0x11006aad0>>: BinanceFutureClient.on_close() takes 1 positional argument but 2 were given
+2024-04-21 16:05:26,729 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:05:34,485 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:05:59,693 ERROR :: error from callback <bound method BinanceFutureClient.on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10bc89e10>>: BinanceFutureClient.on_open() takes 1 positional argument but 2 were given
+2024-04-21 16:07:26,285 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10bc89e10>>: BinanceFutureClient.on_error() takes 2 positional arguments but 3 were given
+2024-04-21 16:07:26,451 ERROR :: error from callback <bound method BinanceFutureClient.on_close of <connectors.binance_futures.BinanceFutureClient object at 0x10bc89e10>>: BinanceFutureClient.on_close() takes 1 positional argument but 2 were given
+2024-04-21 16:07:26,454 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:07:32,132 INFO :: Binance connection opened
+2024-04-21 16:07:40,236 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10e7df150>>: BinanceFutureClient.on_error() takes 2 positional arguments but 3 were given
+2024-04-21 16:07:40,499 ERROR :: error from callback <bound method BinanceFutureClient.on_close of <connectors.binance_futures.BinanceFutureClient object at 0x10e7df150>>: BinanceFutureClient.on_close() takes 1 positional argument but 2 were given
+2024-04-21 16:07:40,501 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:07:47,952 INFO :: Binance connection opened
+2024-04-21 16:07:56,776 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x101c25b90>>: BinanceFutureClient.on_error() takes 2 positional arguments but 3 were given
+2024-04-21 16:07:56,999 ERROR :: error from callback <bound method BinanceFutureClient.on_close of <connectors.binance_futures.BinanceFutureClient object at 0x101c25b90>>: BinanceFutureClient.on_close() takes 1 positional argument but 2 were given
+2024-04-21 16:07:57,001 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:08:21,981 INFO :: Binance connection opened
+2024-04-21 16:08:28,305 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10e129c10>>: BinanceFutureClient.on_error() takes 2 positional arguments but 3 were given
+2024-04-21 16:08:28,540 WARNING :: Binance connection closed
+2024-04-21 16:08:28,542 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:09:57,590 INFO :: Binance connection opened
+2024-04-21 16:10:01,113 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x106e5c690>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:10:01,337 WARNING :: Binance connection closed
+2024-04-21 16:10:01,339 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:10:42,953 INFO :: Binance connection opened
+2024-04-21 16:10:45,507 WARNING :: Binance connection closed
+2024-04-21 16:10:45,509 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:17:18,352 INFO :: Binance connection opened
+2024-04-21 16:17:18,508 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x115965490>>: BinanceFutureClient.on_message() takes 2 positional arguments but 3 were given
+2024-04-21 16:18:02,597 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x115965490>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:18:02,766 WARNING :: Binance connection closed
+2024-04-21 16:18:02,769 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:18:08,154 INFO :: Binance connection opened
+2024-04-21 16:18:08,374 INFO :: Binance message received: {"result":null,"id":1}
+2024-04-21 16:18:16,543 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x1076dca50>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:18:16,785 WARNING :: Binance connection closed
+2024-04-21 16:18:16,787 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:19:25,279 INFO :: Binance connection opened
+2024-04-21 16:19:25,493 INFO :: Binance message received: {"result":null,"id":1}
+2024-04-21 16:19:33,113 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10d1ab310>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:19:33,303 WARNING :: Binance connection closed
+2024-04-21 16:19:33,306 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:22:19,384 INFO :: Binance connection opened
+2024-04-21 16:22:19,614 INFO :: Binance message received: {"result":null,"id":1}
+2024-04-21 16:22:20,284 INFO :: Binance message received: {"e":"bookTicker","u":36087410012,"s":"BTCUSDT","b":"64981.00","B":"0.001","a":"64989.80","A":"0.002","T":1713738140235,"E":1713738140236}
+2024-04-21 16:22:20,285 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: name 'bookTicker' is not defined
+2024-04-21 16:22:26,502 INFO :: Binance message received: {"e":"bookTicker","u":36087410273,"s":"BTCUSDT","b":"64981.10","B":"1.000","a":"64989.80","A":"0.002","T":1713738146327,"E":1713738146351}
+2024-04-21 16:22:26,503 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: name 'bookTicker' is not defined
+2024-04-21 16:22:27,547 INFO :: Binance message received: {"e":"bookTicker","u":36087410309,"s":"BTCUSDT","b":"64981.00","B":"0.001","a":"64989.80","A":"0.002","T":1713738147485,"E":1713738147499}
+2024-04-21 16:22:27,547 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: name 'bookTicker' is not defined
+2024-04-21 16:22:33,651 INFO :: Binance message received: {"e":"bookTicker","u":36087410701,"s":"BTCUSDT","b":"64981.10","B":"1.000","a":"64989.80","A":"0.002","T":1713738153591,"E":1713738153603}
+2024-04-21 16:22:33,651 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: name 'bookTicker' is not defined
+2024-04-21 16:22:34,835 INFO :: Binance message received: {"e":"bookTicker","u":36087410758,"s":"BTCUSDT","b":"64981.00","B":"0.001","a":"64989.80","A":"0.002","T":1713738154783,"E":1713738154787}
+2024-04-21 16:22:34,835 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: name 'bookTicker' is not defined
+2024-04-21 16:22:38,526 INFO :: Binance message received: {"e":"bookTicker","u":36087410948,"s":"BTCUSDT","b":"64981.00","B":"0.001","a":"64990.00","A":"0.986","T":1713738158447,"E":1713738158478}
+2024-04-21 16:22:38,526 ERROR :: error from callback <bound method BinanceFutureClient.on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: name 'bookTicker' is not defined
+2024-04-21 16:22:40,538 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10fca9b90>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:22:40,741 WARNING :: Binance connection closed
+2024-04-21 16:22:40,744 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:23:06,065 INFO :: Binance connection opened
+2024-04-21 16:23:06,254 INFO :: Binance message received: {"result":null,"id":1}
+2024-04-21 16:23:16,063 INFO :: Binance message received: {"e":"bookTicker","u":36087412892,"s":"BTCUSDT","b":"65000.00","B":"0.044","a":"65099.60","A":"221.582","T":1713738196023,"E":1713738196035}
+2024-04-21 16:23:17,341 INFO :: Binance message received: {"e":"bookTicker","u":36087412952,"s":"BTCUSDT","b":"65000.00","B":"0.030","a":"65099.60","A":"221.582","T":1713738197283,"E":1713738197304}
+2024-04-21 16:23:24,266 INFO :: Binance message received: {"e":"bookTicker","u":36087413271,"s":"BTCUSDT","b":"65000.10","B":"1.000","a":"65099.60","A":"221.582","T":1713738204215,"E":1713738204240}
+2024-04-21 16:23:25,587 INFO :: Binance message received: {"e":"bookTicker","u":36087413330,"s":"BTCUSDT","b":"65000.00","B":"0.030","a":"65099.60","A":"221.582","T":1713738205491,"E":1713738205516}
+2024-04-21 16:23:31,597 INFO :: Binance message received: {"e":"bookTicker","u":36087413597,"s":"BTCUSDT","b":"65000.10","B":"1.000","a":"65099.60","A":"221.582","T":1713738211522,"E":1713738211571}
+2024-04-21 16:23:32,796 INFO :: Binance message received: {"e":"bookTicker","u":36087413662,"s":"BTCUSDT","b":"65000.00","B":"0.030","a":"65099.60","A":"221.582","T":1713738212755,"E":1713738212771}
+2024-04-21 16:23:34,208 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10c8a8a90>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:23:34,390 WARNING :: Binance connection closed
+2024-04-21 16:23:34,393 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:24:17,385 INFO :: Binance connection opened
+2024-04-21 16:24:28,611 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10b7e9690>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:24:28,803 WARNING :: Binance connection closed
+2024-04-21 16:24:28,806 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 16:31:41,479 INFO :: Binance connection opened
+2024-04-21 16:31:59,899 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x104935c90>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 16:32:00,103 WARNING :: Binance connection closed
+2024-04-21 16:32:00,105 INFO :: Binance Futures Client Successfully Initialized
