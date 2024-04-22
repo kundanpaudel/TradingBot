@@ -28,7 +28,7 @@ if __name__ == '__main__':
     binance = BinanceFutureClient("4bad66b617dd085319d941104cb4f3f0c03a1ab966a364a2e1845ae14cb54669", "e74f9f00255b56601171f4265ef8df3f8ca6a4f145e6f112058c55cfdecab12b",True)
 
     ## Main window of application.
-    root = Root()  # Create main application window
+    root = Root(binance)  # Create main application window
 
     ## Function that keeps the window open indefinitely 
     # until any user input is given.

@@ -270,3 +270,20 @@
 2024-04-22 14:09:57,322 INFO :: Binance connection opened
 2024-04-22 14:13:12,268 INFO :: Binance Futures Client Successfully Initialized
 2024-04-22 14:13:13,102 INFO :: Binance connection opened
+2024-04-22 14:27:27,412 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:27:28,040 INFO :: Binance connection opened
+2024-04-22 14:27:30,012 ERROR :: error from callback <bound method BinanceFutureClient._on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10526cb50>>: 'BinanceFutureClient' object has no attribute '_add_log'
+2024-04-22 14:27:35,450 ERROR :: error from callback <bound method BinanceFutureClient._on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10526cb50>>: 'BinanceFutureClient' object has no attribute '_add_log'
+2024-04-22 14:28:26,582 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:28:27,356 INFO :: Binance connection opened
+2024-04-22 14:29:24,454 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:29:25,209 INFO :: Binance connection opened
+2024-04-22 14:29:30,873 ERROR :: error from callback <bound method BinanceFutureClient._on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10b0b0b50>>: 'BinanceFutureClient' object has no attribute '_add_log'
+2024-04-22 14:29:44,955 ERROR :: error from callback <bound method BinanceFutureClient._on_message of <connectors.binance_futures.BinanceFutureClient object at 0x10b0b0b50>>: 'BinanceFutureClient' object has no attribute '_add_log'
+2024-04-22 14:29:58,017 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:29:58,740 INFO :: Binance connection opened
+2024-04-22 14:30:20,819 INFO :: BTCUSDT 65850.0 / 66092.0
+2024-04-22 14:31:01,274 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:31:02,078 INFO :: Binance connection opened
+2024-04-22 14:31:51,204 INFO :: BTCUSDT 65831.0 / 66091.4
+2024-04-22 14:32:00,971 INFO :: BTCUSDT 65831.1 / 66091.4

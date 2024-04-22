@@ -33,6 +33,8 @@ class BinanceFutureClient:
 
         # Dictionary to store latest bid-ask prices for symbols
         self.prices = dict()
+        
+        self.logs = []
 
         self._ws_id = 1
         self.ws = None
@@ -44,6 +46,10 @@ class BinanceFutureClient:
         logger.info("Binance Futures Client Successfully Initialized")
 
 
+    def _add_logs(self, msg: str):
+        logger.info("%s", msg)
+        self.logs.append({"log": msg, "displayed": False})
+        
     """
     The method below takes the request data as input and generates a cryptographic
     signature using HMAC (Hash-based Message Authentication Code) algorithm
@@ -244,6 +250,9 @@ class BinanceFutureClient:
                 self.prices[symbol]['bid'] = float(data['b'])
                 self.prices[symbol]['ask'] = float(data['a'])
             # print(self.prices[symbol])
+            if symbol == "BTCUSDT":
+                self._add_logs(symbol+ " " + str(self.prices[symbol]["bid"]) + " / " + 
+                                                str(self.prices[symbol]["ask"]))
 
     
     def subscribe_channel(self, contracts: typing.List[Contract], channel: str):
