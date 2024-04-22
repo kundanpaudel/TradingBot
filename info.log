@@ -150,3 +150,123 @@
 2024-04-21 16:31:59,899 ERROR :: error from callback <bound method BinanceFutureClient.on_error of <connectors.binance_futures.BinanceFutureClient object at 0x104935c90>>: BinanceFutureClient.on_error() missing 1 required positional argument: 'error_msg'
 2024-04-21 16:32:00,103 WARNING :: Binance connection closed
 2024-04-21 16:32:00,105 INFO :: Binance Futures Client Successfully Initialized
+2024-04-21 17:23:15,362 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:23:17,367 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:23:19,372 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:23:21,373 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:23:23,378 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:23:25,382 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:25:03,617 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:25:05,618 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:25:07,619 ERROR :: Binance Error In run_forever() method: 'NoneType' object has no attribute 'run_forever'
+2024-04-21 17:26:11,485 INFO :: Binance connection opened
+2024-04-21 17:26:11,485 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10f9c4d50>>: name 'contracts' is not defined
+2024-04-21 17:26:41,369 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10f9c4d50>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:26:41,554 WARNING :: Binance connection closed
+2024-04-21 17:26:44,228 INFO :: Binance connection opened
+2024-04-21 17:26:44,229 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10f9c4d50>>: name 'contracts' is not defined
+2024-04-21 17:26:52,306 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10f9c4d50>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:26:52,567 WARNING :: Binance connection closed
+2024-04-21 17:27:07,142 INFO :: Binance connection opened
+2024-04-21 17:27:07,143 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10f9a18d0>>: 'BinanceFutureClient' object has no attribute 'contract'
+2024-04-21 17:27:16,983 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10f9a18d0>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:27:17,147 WARNING :: Binance connection closed
+2024-04-21 17:27:58,713 INFO :: Binance connection opened
+2024-04-21 17:27:58,714 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x100e458d0>>: name 'contracts' is not defined
+2024-04-21 17:28:03,163 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x100e458d0>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:28:03,349 WARNING :: Binance connection closed
+2024-04-21 17:28:05,929 INFO :: Binance connection opened
+2024-04-21 17:28:05,929 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x100e458d0>>: name 'contracts' is not defined
+2024-04-21 17:28:08,482 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x100e458d0>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:28:08,639 WARNING :: Binance connection closed
+2024-04-21 17:31:50,793 INFO :: Binance connection opened
+2024-04-21 17:31:50,793 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10b34add0>>: name 'contracts' is not defined
+2024-04-21 17:36:24,111 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10b34add0>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:36:24,280 WARNING :: Binance connection closed
+2024-04-21 17:36:27,963 INFO :: Binance connection opened
+2024-04-21 17:36:27,963 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x107f57910>>: name 'contracts' is not defined
+2024-04-21 17:40:25,995 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x107f57910>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:40:26,160 WARNING :: Binance connection closed
+2024-04-21 17:40:33,413 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute 'ws'
+2024-04-21 17:40:35,416 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute 'ws'
+2024-04-21 17:40:37,416 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute 'ws'
+2024-04-21 17:40:39,417 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute 'ws'
+2024-04-21 17:41:12,617 INFO :: Binance connection opened
+2024-04-21 17:41:12,618 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10423dc10>>: name 'contracts' is not defined
+2024-04-21 17:41:21,344 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10423dc10>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:41:21,562 WARNING :: Binance connection closed
+2024-04-21 17:42:05,557 INFO :: Binance connection opened
+2024-04-21 17:42:05,558 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x114fa1290>>: name 'contracts' is not defined
+2024-04-21 17:42:12,638 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x114fa1290>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:42:12,817 WARNING :: Binance connection closed
+2024-04-21 17:44:34,550 INFO :: Binance connection opened
+2024-04-21 17:45:02,665 INFO :: Binance connection opened
+2024-04-21 17:45:14,203 INFO :: Binance connection opened
+2024-04-21 17:46:13,565 INFO :: Binance connection opened
+2024-04-21 17:46:13,565 ERROR :: Websocket Error While Subscribing to 295 bookTicker updates: 'BinanceFutureClient' object has no attribute 'ws'
+2024-04-21 17:46:59,782 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x118e39e50>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:46:59,950 WARNING :: Binance connection closed
+2024-04-21 17:47:03,567 INFO :: Binance connection opened
+2024-04-21 17:47:03,567 ERROR :: Websocket Error While Subscribing to 295 bookTicker updates: 'BinanceFutureClient' object has no attribute 'ws'
+2024-04-21 17:47:35,288 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10c830910>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:47:35,444 WARNING :: Binance connection closed
+2024-04-21 17:47:37,558 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10c830910>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-21 17:47:37,559 WARNING :: Binance connection closed
+2024-04-21 17:47:44,630 INFO :: Binance connection opened
+2024-04-21 17:47:44,630 ERROR :: Websocket Error While Subscribing to 295 bookTicker updates: 'NoneType' object has no attribute 'send'
+2024-04-22 13:16:24,272 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10f989e10>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:16:24,445 WARNING :: Binance connection closed
+2024-04-22 13:16:53,771 INFO :: Binance connection opened
+2024-04-22 13:16:53,771 ERROR :: Websocket Error While Subscribing to 295 bookTicker updates: 'NoneType' object has no attribute 'send'
+2024-04-22 13:20:10,558 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x102924690>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:20:10,741 WARNING :: Binance connection closed
+2024-04-22 13:20:13,950 INFO :: Binance connection opened
+2024-04-22 13:20:13,950 ERROR :: WebSocket connection is not initialized.
+2024-04-22 13:20:20,559 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x109019e10>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:20:20,807 WARNING :: Binance connection closed
+2024-04-22 13:25:22,632 INFO :: Binance connection opened
+2024-04-22 13:25:22,632 ERROR :: WebSocket connection is not initialized.
+2024-04-22 13:25:22,632 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute '_ws'
+2024-04-22 13:25:24,635 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute '_ws'
+2024-04-22 13:25:26,636 ERROR :: Binance Error In run_forever() method: 'BinanceFutureClient' object has no attribute '_ws'
+2024-04-22 13:26:08,485 INFO :: Binance connection opened
+2024-04-22 13:26:08,485 ERROR :: WebSocket connection is not initialized.
+2024-04-22 13:26:23,677 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10e249c50>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:26:23,939 WARNING :: Binance connection closed
+2024-04-22 13:26:28,619 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10e249c50>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:26:28,796 WARNING :: Binance connection closed
+2024-04-22 13:28:01,232 INFO :: Binance connection opened
+2024-04-22 13:28:01,232 ERROR :: WebSocket connection is not initialized.
+2024-04-22 13:29:25,853 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x102b86690>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:29:26,001 WARNING :: Binance connection closed
+2024-04-22 13:29:31,209 ERROR :: error from callback <bound method BinanceFutureClient._on_open of <connectors.binance_futures.BinanceFutureClient object at 0x10d363510>>: BinanceFutureClient._on_open() missing 1 required positional argument: 'contracts'
+2024-04-22 13:29:51,143 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x10d363510>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:29:51,311 WARNING :: Binance connection closed
+2024-04-22 13:30:22,785 INFO :: Binance connection opened
+2024-04-22 13:30:46,357 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x104e55c50>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:30:46,552 WARNING :: Binance connection closed
+2024-04-22 13:33:50,103 INFO :: Binance connection opened
+2024-04-22 13:34:00,354 ERROR :: error from callback <bound method BinanceFutureClient._on_error of <connectors.binance_futures.BinanceFutureClient object at 0x110751610>>: BinanceFutureClient._on_error() missing 1 required positional argument: 'error_msg'
+2024-04-22 13:34:00,542 WARNING :: Binance connection closed
+2024-04-22 13:41:31,736 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:41:32,542 INFO :: Binance connection opened
+2024-04-22 13:47:15,937 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:47:16,664 INFO :: Binance connection opened
+2024-04-22 13:50:02,656 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:50:03,450 INFO :: Binance connection opened
+2024-04-22 13:55:38,778 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:55:39,577 INFO :: Binance connection opened
+2024-04-22 13:55:54,914 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:55:55,632 INFO :: Binance connection opened
+2024-04-22 13:56:42,290 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:56:43,016 INFO :: Binance connection opened
+2024-04-22 13:56:58,604 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:56:59,333 INFO :: Binance connection opened
+2024-04-22 13:57:30,410 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 13:57:31,132 INFO :: Binance connection opened
+2024-04-22 14:07:28,122 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:07:28,947 INFO :: Binance connection opened
+2024-04-22 14:09:56,487 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:09:57,322 INFO :: Binance connection opened
+2024-04-22 14:13:12,268 INFO :: Binance Futures Client Successfully Initialized
+2024-04-22 14:13:13,102 INFO :: Binance connection opened
