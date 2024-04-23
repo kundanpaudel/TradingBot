@@ -105,7 +105,7 @@ class BinanceFutureClient:
         if exchange_info is not None:
             # Extract contract data from API response
             for contract_data in exchange_info['symbols']:
-                contracts[contract_data['pair']] = Contract(contract_data)
+                contracts[contract_data['symbol']] = Contract(contract_data)
         return contracts
     
     def get_historical_candles(self, contract: Contract, interval: str) -> typing.List[Candle]:
@@ -250,9 +250,9 @@ class BinanceFutureClient:
                 self.prices[symbol]['bid'] = float(data['b'])
                 self.prices[symbol]['ask'] = float(data['a'])
             # print(self.prices[symbol])
-            if symbol == "BTCUSDT":
-                self._add_logs(symbol+ " " + str(self.prices[symbol]["bid"]) + " / " + 
-                                                str(self.prices[symbol]["ask"]))
+            # if symbol == "BTCUSDT":
+            #     self._add_logs(symbol+ " " + str(self.prices[symbol]["bid"]) + " / " + 
+            #                                     str(self.prices[symbol]["ask"]))
 
     
     def subscribe_channel(self, contracts: typing.List[Contract], channel: str):
