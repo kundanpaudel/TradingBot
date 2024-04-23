@@ -47,7 +47,6 @@ class WatchList(tk.Frame):
             self.body_widgets[h][b_index].grid_forget()
             del self.body_widgets[h][b_index]
             
-        
             
     def _add_binance_symbol(self, event):
         symbol = event.widget.get()
@@ -60,10 +59,6 @@ class WatchList(tk.Frame):
         self.body_widgets['symbol'][b_index] = tk.Label(self._table_frame, text=symbol, bg=BG_COLOR, fg=FG_COLOR_2
                                                         , font=GLOBAL_FONT)
         self.body_widgets['symbol'][b_index].grid(row=b_index, column=0)
-        
-        # self.body_widgets['exchange'][b_index] = tk.Label(self._table_frame, text=symbol, bg=BG_COLOR, fg=FG_COLOR_2
-        #                                                 , font=GLOBAL_FONT)
-        # self.body_widgets['exchange'][b_index].grid(row=b_index, column=1)
         
         self.body_widgets["bid_var"][b_index] = tk.StringVar()
         self.body_widgets['bid'][b_index] = tk.Label(self._table_frame, textvariable=self.body_widgets["bid_var"][b_index], bg=BG_COLOR, fg=FG_COLOR_2
