@@ -35,8 +35,8 @@ class StrategyEditor(tk.Frame):
             {"code_name":"take_profit", "widget": tk.Entry, "data_type":float, "width":7},
             {"code_name":"stop_loss", "widget": tk.Entry, "data_type":float, "width":7},
             {"code_name":"parameters", "widget": Button, "data_type":float, "text": "Parameters", "bg":BG_COLOR_2, "command":self._show_popup},
-            {"code_name":"activation", "widget": Button, "data_type":float, "text": "OFF", "bg":BG_COLOR_2, "command":self._switch_strategy},
-            {"code_name":"delete", "widget": Button, "data_type":float, "text": "X", "bg":BG_COLOR_2, "command":self._delete_row},
+            {"code_name":"activation", "widget": Button, "data_type":float, "text": "OFF", "bg":"darkred", "command":self._switch_strategy},
+            {"code_name":"delete", "widget": Button, "data_type":float, "text": "X", "bg":"darkred", "command":self._delete_row},
         ]
         
         for idx, h in enumerate(self._headers):
@@ -64,7 +64,7 @@ class StrategyEditor(tk.Frame):
             elif base_param["widget"] == tk.Entry:
                 self.body_widgets[code_name][b_index] = tk.Entry(self._table_frame, justify=tk.CENTER)
             elif base_param["widget"] == Button:
-                self.body_widgets[code_name][b_index] = tk.Entry(self._table_frame, text=base_param['text'], bg=base_param['bg'], fg=FG_COLOR, command=lambda: base_param['command'](b_index))
+                self.body_widgets[code_name][b_index] = Button(self._table_frame, text=base_param['text'], bg=base_param['bg'], fg=FG_COLOR, command=lambda: base_param['command'](b_index))
             else:
                 continue
             
