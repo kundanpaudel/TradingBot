@@ -39,6 +39,17 @@ class StrategyEditor(tk.Frame):
             {"code_name":"delete", "widget": Button, "data_type":float, "text": "X", "bg":"darkred", "command":self._delete_row},
         ]
         
+        self._extra_params = {
+            "Technical": [
+                {"code_name":"ema_fast", "name":"MACD Fast Length", "widget": tk.Entry, "data":int},
+                {"code_name":"ema_slow", "name":"MACD Slow Length", "widget": tk.Entry, "data":int},
+                {"code_name":"ema_signal", "name":"MACD Signal Length", "widget": tk.Entry, "data":int},
+            ],
+            "Breakout": [
+                {"code_name":"min_vol", "name":"Minimum Volume", "widget": tk.Entry, "data":float},
+            ]
+        }
+        
         for idx, h in enumerate(self._headers):
             header = tk.Label(self._table_frame, text= h, bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
             header.grid(row=0, column=idx)
@@ -57,6 +68,7 @@ class StrategyEditor(tk.Frame):
             code_name = base_param['code_name']
             if base_param['widget'] == tk.OptionMenu:
                 self.body_widgets[code_name + "_var"][b_index] = tk.StringVar()
+                self.body_widgets[code_name + "_var"][b_index].set(base_param['values'][0])
                 self.body_widgets[code_name][b_index] = tk.OptionMenu(self._table_frame, 
                                                                       self.body_widgets[code_name+"_var"][b_index],
                                                                       *base_param['values'])
@@ -64,7 +76,7 @@ class StrategyEditor(tk.Frame):
             elif base_param["widget"] == tk.Entry:
                 self.body_widgets[code_name][b_index] = tk.Entry(self._table_frame, justify=tk.CENTER)
             elif base_param["widget"] == Button:
-                self.body_widgets[code_name][b_index] = Button(self._table_frame, text=base_param['text'], bg=base_param['bg'], fg=FG_COLOR, command=lambda: base_param['command'](b_index))
+                self.body_widgets[code_name][b_index] = Button(self._table_frame, text=base_param['text'], bg=base_param['bg'], fg=FG_COLOR, command=lambda frozen_command=base_param['command']: frozen_command(b_index))
             else:
                 continue
             
@@ -74,10 +86,46 @@ class StrategyEditor(tk.Frame):
         self._body_index += 1
         
     def _show_popup(self, b_index:int):
+        
+        x = self.body_widgets["parameters"][b_index].winfo_rootx()
+        y = self.body_widgets["parameters"][b_index].winfo_rooty()
+        
+        self._popup_window = tk.Toplevel(self)
+        self._popup_window.wm_title("Parameters")
+        
+        self._popup_window.config(bg=BG_COLOR)
+        self._popup_window.attributes("-topmost", "true")
+        self._popup_window.grab_set()
+        
+        self._popup_window.geometry(f"+{x-80}+{y + 30}")
+        
+        strat_selected = self.body_widgets['strategy_type_var'][b_index].get()
+        
+        row_nb = 0
+        
+        for param in self._extra_params[strat_selected]:
+            code_name = param["code_name"]
+            temp_label = tk.Label(self._popup_window, bg=BG_COLOR, fg=FG_COLOR, text=param["name"], font=BOLD_FONT)
+            temp_label.grid(row=row_nb, column=0)
+            
+            if param["widget"] == tk.Entry:
+                temp_input = tk.Entry(self._popup_window, bg=BG_COLOR_2, justify=tk.CENTER, insertbackground=FG_COLOR)
+            temp_input.grid(row=row_nb, column=1)
+            row_nb+=1
+        
+        ## Validation Button ##
+        validation_button = Button(self._popup_window, text="Validate", bg=BG_COLOR_2, fg=FG_COLOR, command=lambda: self._validate_parameters(b_index))
+        validation_button.grid(row=row_nb, column=0, columnspan=2)
+    
+    def _validate_parameters(self, b_index:int):
         return
     
     def _switch_strategy(self, b_index:int):
         return
 
     def _delete_row(self, b_index:int):
-        return
+        for element in self._base_params:
+            self.body_widgets[element['code_name']][b_index].grid_forget()
+            
+            del self.body_widgets[element['code_name']][b_index]
+            
